@@ -1,0 +1,12 @@
+Office Hour Preferences: I am available any mornings on week days and anytime on Saturday.
+
+ Values/Goals: I want to be able to master Java and this course will help me practice Java with projects etc. 
+
+ Computer Inventory:
+ Mac, Windows, or Linux? (MacBook Pro 15", can also run
+Windows 11)
+• Processor; Cores; Clock Speed (Intel Core i7, 6 cores, 2.2 GHz)
+• Model and/or Year issued (2018)
+• Operating System Version (Sonoma 14.1.2)
+• Random Access Memory (16 GB)
+• Non-volatile Memory; Remaining Space Available (256 GB; 36 GB)
