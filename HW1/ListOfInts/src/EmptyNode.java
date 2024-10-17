@@ -24,7 +24,7 @@ public class EmptyNode implements ListOfInts {
 
   @Override
   public ListOfInts insertAtIndex(int data, int index) {
-    if (index >= 1)
+    if (index >= 1 || index < 0)
       throw new IndexOutOfBoundsException();
     return append(data);
   }
