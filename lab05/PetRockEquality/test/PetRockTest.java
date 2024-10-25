@@ -10,6 +10,7 @@ class PetRockTest {
 
   PetRock myRock;
   PetRock myRock2;
+  PetRock newRock;
   PetRock copyRock;
 
   /**
@@ -20,6 +21,7 @@ class PetRockTest {
 
     myRock = new PetRock("Rocky", 20);
     copyRock = new PetRock("Rocky", 20);
+    newRock = new PetRock("Rocky", 20);
     myRock2 = new PetRock("Stony", 10);
   }
 
@@ -27,8 +29,7 @@ class PetRockTest {
    * Testing if the equals method works as expected for two PetRocks
    */
   @Test
-  void PetRockEqualityTest()
-  {
+  void PetRockEqualityTest() {
     //Testing if two PetRocks with different names are equal
     PetRock myRockNewname = new PetRock("Rockie", 20);
     assertEquals(false, myRock.equals(myRockNewname));
@@ -52,6 +53,34 @@ class PetRockTest {
     //Testing if two completely different objects are equal
     int myInt = 10;
     assertEquals(false, myRock2.equals(myInt));
+  }
+
+    /**
+     * Tests the symmetry property of the equals() method. If myRock equals copyRock, then copyRock should also equal myRock.
+     */
+    @Test
+    void testEquals_Symmetric() {
+    assertTrue(myRock.equals(copyRock));
+    assertTrue(copyRock.equals(myRock));
+  }
+
+    /**
+     * Tests the reflexivity property of the equals() method. An object should always be equal to itself.
+     */
+    @Test
+    void testEquals_Reflexive() {
+    assertTrue(copyRock.equals(copyRock));
+  }
+
+    /**
+     * Tests the transitivity property of the equals() method. If rock_a equals rock_b, and rock_b
+     * equals rock_c, then rock_a should equal rock_c.
+     */
+    @Test
+    void testEquals_Transitive() {
+    assertTrue(myRock.equals(copyRock));
+    assertTrue(copyRock.equals(newRock));
+    assertTrue(myRock.equals(newRock));
 
   }
 
