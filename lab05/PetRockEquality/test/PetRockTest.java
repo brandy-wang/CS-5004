@@ -73,8 +73,7 @@ class PetRockTest {
   }
 
     /**
-     * Tests the transitivity property of the equals() method. If rock_a equals rock_b, and rock_b
-     * equals rock_c, then rock_a should equal rock_c.
+     * Tests the transitivity property of the equals() method. If myRock equals copyRock, and copyRock equals newRock, then myRock should equal newRock.
      */
     @Test
     void testEquals_Transitive() {
