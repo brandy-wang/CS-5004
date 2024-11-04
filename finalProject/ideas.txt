@@ -1,0 +1,37 @@
+Online Household Chores Management Website
+
+This online household management website will help users efficiently organize and complete household
+chores with the following features:
+1. Account Creation: Users can create individual accounts to track their progress.
+2. Room Creation and Team Collaboration: Users can create virtual rooms and invite others to join,
+forming a team for shared management of household tasks.
+3. Calendar-based Task List: Users can schedule chores on a calendar, ensuring timely completion and
+accountability.
+4. Category-based Chore Management: Chores can be organized by room type (e.g., living room,
+bathroom) for streamlined task management.
+5. Point-based Rewards and Competition: Each completed chore rewards points to the user.
+Within a team, members can compete with each other at the end of a cycle. The highest scorer will win.
+
+Tools Needed:
+Frontend: HTML/CSS, JavaScript, Vue
+Backend: Java
+Database: MongoDB or Firebase (for user accounts, tasks, points, etc.)
+Hosting: Vercel, Heroku, or Firebase Hosting (for deploying the web application)
+Version Control: GitHub (for team collaboration and version management)
+
+Pros:
+1. Focus on core features and complete an MVP which allows rapid user testing and iteration.
+2. Provide experience with a full-stack project
+3. Learn incorporating features like calendars and points
+
+Cons:
+1. Front-end part is not the focus of this course
+2. Limited Time for Testing and Debugging
+
+
+
+
+
+
+
+
