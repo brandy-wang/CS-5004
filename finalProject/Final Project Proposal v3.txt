@@ -1,0 +1,115 @@
+ 1. PROJECT NAME (5 points)
+    Household Chores Management Website - HomeHarmony
+
+ 2. TEAM MEMBERS (5 points)
+    Qinyuan Shen; Jianing Wang; Kaiying Yu
+
+
+ 3. PROBLEM TO BE SOLVED (about 3 sentences, 10 points)
+    We're solving the problem of splitting chores evenly among roommates
+
+ 4. PROJECT MOTIVATION (why you want to work on this problem, 10 points)
+    Roommates often get into conflicts about how to fairly divide chores. This inspired us to come up with a creative way for roommates to split chores
+    that's fun and fair at the same time.
+
+
+ 5. TECHNICAL APPROACH (1 paragraph, 15 points)
+    This online household management website will help users efficiently organize and complete household
+    chores with the following features:
+    1. Account Creation: Users can create individual accounts to track their progress.
+    2. Room Creation and Team Collaboration: Users can create virtual rooms and invite others to join,
+    forming a team for shared management of household tasks.
+    3. Calendar-based Task List: Users can schedule chores on a calendar, ensuring timely completion and
+    accountability.
+    4. Category-based Chore Management: Chores can be organized by room type (e.g., living room,
+    bathroom) for streamlined task management.
+    5. Point-based Rewards and Competition: Each completed chore rewards points to the user.
+    Within a team, members can compete with each other at the end of a cycle. The highest scorer will win.
+
+ 6. TOOLS/FRAMEWORKS NEEDED (10 points)
+
+
+    Frontend: HTML/CSS, JavaScript, Vue or Svelte
+    Backend: Java with Spring Boot
+    Database: MySQL Database (for user accounts, tasks, points, etc.)
+    API: RESTful API, WebSocket
+    Authentication System: JSON Web Tokens (JWT)
+    Hosting: Vercel, Heroku, or Firebase Hosting (for deploying the web application)
+    Version Control: GitHub (for team collaboration and version management)
+
+ 7. DELIVERY PLATFORM (Laptop text IO, Laptop GUI, Android Emulator, Web Page, Other; 10 points)
+    Web Page
+
+ 8. RISK FACTORS (10 points) -- things you may need to learn along the way or uncertainties in design
+    
+    1. Spring Boot Learning Curve:
+	Dependency Injection and Inversion of Control (IoC)
+	Spring MVC for building RESTful APIs
+	Spring Data JPA for database operations
+	Spring Security for authentication and authorization
+
+    2. Svelte Frontend Development:
+	Svelte component structure and lifecycle
+	State management in Svelte
+	Reactive declarations and statements
+	Svelte's build process and tooling
+
+    3. Database Integration:
+	Configuring database connections in Spring Boot
+	Writing and optimizing SQL queries
+	Understanding ORM (Object-Relational Mapping) concepts
+
+    4. RESTful API Design:
+	Designing a clean and efficient API requires understanding RESTful principles and best practices.
+
+    5. Authentication and Security:
+	Implementing secure user authentication and authorization can be complex.
+
+    6. Frontend-Backend Integration:
+	Connecting the Svelte frontend to the Spring Boot backend may present challenges, particularly in handling CORS (Cross-Origin Resource Sharing) and managing API requests.
+
+    7. Asynchronous Programming:
+	Both frontend and backend will likely involve asynchronous operations
+
+    8. Testing:
+	Implementing comprehensive testing (unit, integration, end-to-end) for both frontend and backend requires learning new testing frameworks and methodologies.
+
+    9. Deployment and DevOps:
+	Setting up a production environment, configuring servers, and managing deployments can be complex.
+
+    10. Responsive Design:
+	Creating a responsive UI that works well on various devices might be challenging.
+
+ 9. VERY INFORMAL ARCHITECTURE AND DESIGN DIAGRAMS (MVC or similar; Class Diagram(s), 15 points)
+    This can be very informal, phone picture of sheet of paper, hand-drawn on tablet, or similar.
+
+	[Frontend (Svelte)]
+        	|
+        	| HTTP/WebSocket
+        	|
+	[API Gateway / Load Balancer]
+       		|
+        	|
+	[Backend (Java Spring Boot)]
+    		|       |       |
+    		|       |       |
+	    [Services] 	|       |
+    		|       |       |
+	     [Repositories]     |
+    		|               |
+	[Database (MySQL)]  	|
+                    		|
+            		[External Services]
+           	 (Email, Push Notifications, etc)
+
+10. FIVE EXAMPLES OF 5004 "BIG IDEAS" TO BE ILLUSTRATED (10 points)
+(1) Use class hierarchies and dynamic dispatch over tagged classes, complex if/switch statements. In our project, we will use class hierarchies and dynamic dispatch for the chores interfaces and its concrete classes.
+(2) Single Responsibility: Each component(for example, the chores interface or the concrete classes of it) has a single purpose.
+(3) Open for extension, closed for modification: Each component is open to be extended without modifying its source code. Design to make likely later changes easier.
+(4) Interface segregation: If an interface is only partially used, we will decompose it into smaller ones.
+(5) Dependency inversion: In our project, a high-level class would not depend on specific low-level class. Details will depend on abstractions.
+
+// test for git push
+//......
+
+
