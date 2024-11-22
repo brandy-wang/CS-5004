@@ -1,7 +1,7 @@
 package model;
 
 /**
- * The GameModel interface defines the main functions for the game.
+ * The TTTModel interface defines the main functions for the game.
  * It is implemented by a class that handles the game logic.
  */
 
@@ -18,7 +18,7 @@ public interface TTTModel {
     void initializeGame(model.Player player1, model.Player player2);
 
     // Pros: Clean separation of concerns.
-    // Cons: Changing player logic may require updates in both Player and GameModel.
+    // Cons: Changing player logic may require updates in both Player and TTTModel.
 
     /**
      * Switches the turn between players.
